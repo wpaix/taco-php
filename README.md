@@ -1,7 +1,6 @@
-tacophp
-=======
+![alt tag](https://cloud.githubusercontent.com/assets/6876791/5011131/e3475816-6a7a-11e4-8ddb-5438c1c44887.png)
 
-Taco - Featherweight PHP MVC Framework
+Taco PHP - Featherweight MVC Framework
 
 Looking at CodeIgniter, I thought to myself that this could be done simpler, easier to use and with less files cluttering up my web root.
 
