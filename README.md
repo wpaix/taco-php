@@ -1,4 +1,4 @@
-![alt tag](https://cloud.githubusercontent.com/assets/6876791/5011131/e3475816-6a7a-11e4-8ddb-5438c1c44887.png)
+![alt tag](https://cloud.githubusercontent.com/assets/6876791/5017065/4e5f8526-6aab-11e4-9d4a-9ee3f6a5fae5.png)
 
 Taco PHP - Featherweight MVC Framework
 
