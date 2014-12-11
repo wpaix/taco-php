@@ -1,0 +1,16 @@
+
+    </div> <!-- #mainarea -->
+    
+  
+  
+<script type="text/javascript" src="{$this->url}/assets/js/main.js"></script>
+{$this->route->js|default:''}
+
+{if !$this->dev_mode}<script>alert("Insert Google Analytics tracking, plz.");</script>{/if}
+
+</body>
+</html>
+
+{if $this->dev_mode}
+<!-- {print_r($this)} -->
+{/if}

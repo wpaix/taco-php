@@ -1,0 +1,1 @@
+<? require_once('smarty/Smarty.class.php');
