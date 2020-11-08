@@ -1,0 +1,9 @@
+{
+    "slug": "friendlysales",
+    "client_slug": "oktan",
+    "name": "Friendly Sales",
+    "timelogs": [ 1,2,3,4,5 ],
+    "hour_rate": 890,
+    "color": "teal",
+    "invoiced": 1
+}

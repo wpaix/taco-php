@@ -1,52 +1,79 @@
-![alt tag](https://cloud.githubusercontent.com/assets/6876791/5017065/4e5f8526-6aab-11e4-9d4a-9ee3f6a5fae5.png)
+![alt text](taco-php.png)
 
-# Taco PHP - Featherweight MVC Framework
-* Clean SEO-friendly URLS: www.site.com/something/something-else
-* Router supporting wildcards (numbers, strings, both as well as full RegExp support)
-* LESS support: Less files are automagically compiled when in development mode
-* Development mode takes care developerment/live settings such as error reporting, google anlytics, etc. for you.
-* Project structure can be changed to whatever you prefer
-* Easily extendable with auto class loading
-* Uses the excellent MySQLiDB ORM class for swift database manipulation.
-* Autoloads JSON files your views can read from so you don't mix data and representation.
-* Automatic CSS/JS asset loading: helps you branch out your CSS/JS and makes sure your code/dependencies are only loaded when needed
+# Taco PHP
+- Extremely lightweight and super easy
+- Flexible and can hold anything you put in it
+- Made for that small/medium appetite
 
+### Features
+- Flexible URL routing that can lead to handlers, controllers or directly to views
+- Controllers, views and helper methods
+- Database query builder (FluentPDO)
+- Loads composer packages if you want to
+- Loads .env file if you want to
 
-# Installation
-1. Download and unzip to your web folder
-2. Open op the index.php file and update your config, most importantly the URL definition, and if needed your database connection details
-3. That's it!
+### Config
+The index.php contains your config. Here you can enable composer and .env if you want. (´composer require vlucas/phpdotenv´)
 
+### Routing and controllers/views
+You setup routes. They can refer to controllers, views or method handlers.
 
-# Controllers
-* Found in the 'controllers' folder, unless you define another placement.
-* By default, controller look for a view by the same name, if it's to be found.
-* $this->route->view = 'something' - Change to any specific view.
-* $this->route->css_libraries = '<link href="assets/plugins/library.css" rel="stylesheet">' - Tells the view to load a specific css library. Can contain several libraries.
-* $this->route->js_libraries = '<script type="text/javascript" href="assets/plugins/library.js"></script>' - Tells the view to load a specific js library. Can contain several.
-* The __global controller is special. As the name implies, it's globally loaded regardless of controllers and views. So place your global code here, that's what it's for. It's got predefined functions set that are executed when TacoPHP does certain things, for instance just when classes or json is loaded, or after the controller has been run.
+### Available methods
+> baseurl()
 
+> app_root()
 
-# Views
-* Found in the 'views' folder, unless you define another placement.
-* the home.php is for the root of the website.
-* by default includes have filenames like these _header.php, _footer.php to tell them apart.
-* View specific CSS/JS is loaded if a file with the view name is found in assets/css/view and assets/js/view
+> dd($something)
 
+> get_route_path()
 
-# Routes
-* Defined in the index.php config under $config['routes']
-* Wildcards: :NUM: for any number, :STR: for strings only, :NUMSTR: or :STRNUM: for both. (Synonyms for [a-z] and [0-9])
-* Supports RegExp in full
-* An asterisk (*) means anything hereafter will match.
-* Routes are validated from top to bottom, so if a match is found it will look no further. So ordering can be of importance.
+> get_route_params()
 
+> get_route_param(0)
 
-# Database handling
-* Only if database details are specified a connection will be made.
-* The database is targeted through the $db variable.
-* The excellent MySQLiDB ORM class is used for all database handling, documentation found here: https://github.com/joshcam/PHP-MySQLi-Database-Class
+> db()->do->something()
+
+> input('any'), input('get'), input('post')
+
+> output(200,(object)['msg' => 'allright!'])
+
+### Database
+If you want to play with a database, enable composer and load in envms/fluentpdo (´composer require envms/fluentpdo´)
+
+# Local dev: Serve solution
+Serve up some hot tacos by running:
+> $ php -S localhost:8000
 
 
-# Extending stuff
-* Anything placed in the classes folder will be autoloaded, so feel free to inlclude new classes you'll need.
+
+---
+
+
+
+
+# Milk timetracker
+This is a micro tool for quick and easy timetracking, reporting and client view-access.
+Our custom Kia platform was overkill.
+
+# Local dev: Serve solution
+No MAMP or anything needed. :) Just run:
+> $ php -S localhost:8000
+
+
+# Roadmap
+- client > project > timelog
+- JSON saving: /database folder. One JSON file per project, one per client
+- URL setup, eg: worklog.milk-studio.dk/ctg/93748-vikinglotto2
+- URL setup, eg: worklog.milk-studio.dk/28374-ctg
+
+
+
+
+
+
+
+
+
+
+
+
