@@ -1,7 +1,7 @@
 <html lang="da">
 <head>
 
-    <title>Milk: Timetracking</title>
+    <title>Taco PHP</title>
     <meta charset="utf-8">
     
     <meta name="format-detection" content="telephone=no" />
@@ -27,7 +27,7 @@
         </div>
 
         <div class="headerlogo">
-            Milk Tracker
+            Taco PHP
         </div>
 
         <div class="headermenu">            

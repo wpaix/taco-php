@@ -44,36 +44,3 @@ If you want to play with a database, enable composer and load in envms/fluentpdo
 Serve up some hot tacos by running:
 > $ php -S localhost:8000
 
-
-
----
-
-
-
-
-# Milk timetracker
-This is a micro tool for quick and easy timetracking, reporting and client view-access.
-Our custom Kia platform was overkill.
-
-# Local dev: Serve solution
-No MAMP or anything needed. :) Just run:
-> $ php -S localhost:8000
-
-
-# Roadmap
-- client > project > timelog
-- JSON saving: /database folder. One JSON file per project, one per client
-- URL setup, eg: worklog.milk-studio.dk/ctg/93748-vikinglotto2
-- URL setup, eg: worklog.milk-studio.dk/28374-ctg
-
-
-
-
-
-
-
-
-
-
-
-
