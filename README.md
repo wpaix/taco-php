@@ -20,29 +20,16 @@
 The index.php contains your config. Here you can enable composer and .env if you want. (´composer require vlucas/phpdotenv´)
 
 ### Routing and controllers/views
-You setup routes. They can refer to controllers, views or method handlers.
-
-### Available methods
-> baseurl()
-
-> app_root()
-
-> dd($something)
-
-> get_route_path()
-
-> get_route_params()
-
-> get_route_param(0)
-
-> db()->do->something()
-
-> input('any'), input('get'), input('post')
-
-> output(200,(object)['msg' => 'allright!'])
+- You setup routes. They can refer to controllers, views or method handlers.
+- You can use normal PHP views, or Laravel blade views. For laravel Blade we are using the standalone Blade package (jenssegers/blade)
+- For blade views use load_blade_view('viewfile', ['name'='johndoe']) for php views use load_view('viewfile',['name'='johndoe'])
 
 ### Database
 If you want to play with a database, enable composer and load in envms/fluentpdo (´composer require envms/fluentpdo´)
+
+# Database
+- If you want to play with a database, we got the nicest query builder in town ready to play with
+- Using PDOx query builder, loaded via composer.  Docs: https://github.com/izniburak/PDOx/blob/master/DOCS.md
 
 # Local dev: Serve solution
 Serve up some hot tacos by running:
@@ -53,10 +40,10 @@ Serve up some hot tacos by running:
 ### Methods
 - Look inside the taco.php file to see available methods provided
 - Look inside the helpers.php file to see available methods provided.
-- If you want to add your own, do it to helpers.php
-
+- If you want to add your own per project, do it to helpers.php
 
 # Roadmap (todo)
 - is route() ?
-- is_controller() and is_view() plz
+- is_controller() and is_view() plz - if possible
 - Perhaps a custom debug log, ala simple debugbar, to be shown somewhere. Can be method invoked, eg. <pre><?=output_debug_log();?></pre> and <?php debug_log('title', $data); ?> and with a list of all sql commands called
+- Cleanup helpers so it is almost empty, and all else is in taco.php
