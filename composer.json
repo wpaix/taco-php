@@ -1,0 +1,6 @@
+{
+    "require": {
+        "izniburak/pdox": "^1.5",
+        "jenssegers/blade": "^1.4"
+    }
+}

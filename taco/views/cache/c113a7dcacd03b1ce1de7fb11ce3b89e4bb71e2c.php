@@ -1,0 +1,2 @@
+I am partial 2
+<?php echo $__env->make('partial1', \Illuminate\Support\Arr::except(get_defined_vars(), ['__data', '__path']))->render(); ?><?php /**PATH /Users/william/code/tv2jul.test/app/views/subviews/partial2.blade.php ENDPATH**/ ?>

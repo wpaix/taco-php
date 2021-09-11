@@ -1,0 +1,1 @@
+I am partial 1<?php /**PATH /Users/william/code/tv2jul.test/app/views/partial1.blade.php ENDPATH**/ ?>

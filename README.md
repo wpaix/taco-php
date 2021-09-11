@@ -1,9 +1,13 @@
-![alt text](taco-php.png)
+![alt text](public/assets/img/taco-php.png)
 
 # Taco PHP
-- Extremely lightweight and super easy
-- Flexible and can hold anything you put in it
-- Made for that small/medium appetite
+- Extremely lightweight and super easy to use
+- Flexible setup. Want to change folder structure? You can have things your way
+- Made for that small/medium appetite, but also scalable for larger things
+- Comes with included super-basic auth setup, with one login controlled from .env file. You can extended this setup if you want to build something larger.
+- Easy database handling with query builder.
+- Use crisp blade templates if you want to. Or just use basic PHP templates.
+- Comes with a basic frontend setup you can scrap or extend upon.
 
 ### Features
 - Flexible URL routing that can lead to handlers, controllers or directly to views
@@ -44,3 +48,15 @@ If you want to play with a database, enable composer and load in envms/fluentpdo
 Serve up some hot tacos by running:
 > $ php -S localhost:8000
 
+# Documentation
+
+### Methods
+- Look inside the taco.php file to see available methods provided
+- Look inside the helpers.php file to see available methods provided.
+- If you want to add your own, do it to helpers.php
+
+
+# Roadmap (todo)
+- is route() ?
+- is_controller() and is_view() plz
+- Perhaps a custom debug log, ala simple debugbar, to be shown somewhere. Can be method invoked, eg. <pre><?=output_debug_log();?></pre> and <?php debug_log('title', $data); ?> and with a list of all sql commands called

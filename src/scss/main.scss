@@ -1,0 +1,147 @@
+
+
+//------------------------------------------------------------------------------
+
+$minwidth_xxl:  1601px;    $maxwidth_xxl:   	99999px;
+$minwidth_xl:   1200px;    $maxwidth_xl:   	  #{$minwidth_xxl - 0.01px};
+$minwidth_l: 	   992px;    $maxwidth_l:   	  #{$minwidth_xl - 0.01px};
+$minwidth_m: 	   768px;    $maxwidth_m:  	    #{$minwidth_l - 0.01px};
+$minwidth_s: 	   576px;    $maxwidth_s:       #{$minwidth_m - 0.01px};
+$minwidth_xs:      0px;    $maxwidth_xs: 	    #{$minwidth_s - 0.01px};
+
+//------------------------------------------------------------------------------
+
+@import '_mixins';
+
+//------------------------------------------------------------------------------
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	-webkit-tap-highlight-color: rgba(0,0,0,0);
+	-webkit-tap-highlight-color: transparent;
+}
+
+//--------------------------------------------------------------------------------------
+
+body {
+	font-family: Nunito, 'helvetica neue', helvetica, arial, sans-serif;
+	background-color: #FFFFFF;
+	color: #646B6F;
+	font-size: 16px;
+	@include max_s { font-size: 18px * 1; }
+	line-height: 1.8;
+	font-weight: 500;
+    margin: 0;
+	padding: 0;
+}
+
+//--------------------------------------------------------------------------------------
+
+.corset {
+	margin: 0 auto;
+	padding: 0 20px;
+    width: calc( 100% - 40px );
+    max-width: 800px;
+    position: relative;
+}
+
+//--------------------------------------------------------------------------------------
+
+h1 {
+	font-size: 4rem;
+	font-weight: 300;
+}
+
+p {
+	margin-bottom: 1em;
+}
+
+img, svg { display: block; width: 100%; height: auto; }
+
+//--------------------------------------------------------------------------------------
+
+//--------------------------------------------------------------------------------------
+
+.card {
+	box-shadow: 0 8px 15px rgba(black,.1);
+	padding: 2rem;
+	background-color: white;
+	border-radius: 10px;
+}
+
+//--------------------------------------------------------------------------------------
+
+.btn {
+	background-color: rgba(black,.2);
+	color: #646B6F;
+	padding: .4em 1.5em;
+	font-size: 1rem;
+	cursor: pointer;
+	border-radius: 6px;
+	text-decoration: none;
+	appearance: none;
+	border: none; // buttons reset
+}
+
+//--------------------------------------------------------------------------------------
+
+input.styled {
+	background-color: white;
+	border: 1px solid #AAA;
+	color:#646B6F;
+	padding: .7em 1.3em;
+	border-radius: 10px;
+	font-size: 1rem;
+	font-family: Nunito, 'helvetica neue', helvetica, arial, sans-serif;
+}
+
+//--------------------------------------------------------------------------------------
+
+.header {
+	margin-top: 2rem;
+	margin-bottom: 2rem;
+}
+
+.header .menu {
+	text-align: center;
+	a {
+		font-size: .9rem;
+		color: #646B6F;
+		text-transform: uppercase;
+		text-decoration: none;
+		margin: 0 .5em;
+		font-weight: 600;
+		&.current { opacity: .5; pointer-events: none; }
+	}
+}
+
+//--------------------------------------------------------------------------------------
+
+.home-logo {
+	max-width: 300px;
+	margin: 3rem auto;
+}
+
+//--------------------------------------------------------------------------------------
+
+.footer {
+	text-align: center;
+	color: rgba(#646B6F,.2);
+	font-size: .75rem;
+	margin-top: 1.5rem;
+	margin-bottom: 1rem;
+}
+
+//------------------------------------------------------------------------------
+
+.align-c { text-align: center; }
+.hide { display: none; }
+
+//------------------------------------------------------------------------------
+
+@import 'modals.scss';
+
+//-----------------------------------------------------------------
+
