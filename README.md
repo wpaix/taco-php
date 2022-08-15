@@ -1,5 +1,13 @@
 ![alt text](public/assets/img/taco-php.png)
 
+# TODO next version
+- make it a Class
+- make it work with or without  
+    - env file (just load stuff into the construct func)
+    - composer
+    - router, controller, view (not always we want this)
+    - look at nx if in doubt as to how
+
 # Taco PHP
 - Extremely lightweight and super easy to use
 - Flexible setup. Want to change folder structure? You can have things your way
